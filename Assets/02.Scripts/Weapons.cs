@@ -12,6 +12,9 @@ public class Weapons : MonoBehaviour
     public TrailRenderer trailEffect; //근접공격 이펙트
     public Transform arrowPos; //화살나가는위치
     public GameObject arrow; //화살
+    public PlayerST playerST;
+
+  
 
     public void Use()//무기 사용
     {
@@ -40,12 +43,23 @@ public class Weapons : MonoBehaviour
 
     IEnumerator Shot()
     {
+
         //화살 발사
+        playerST.isSootReady = true;
         yield return new WaitForSeconds(0.2f); //애니메이션과 화살나가는속도와 맞추기위함
         GameObject intantArrow = Instantiate(arrow, arrowPos.position, arrowPos.rotation);
         Rigidbody arrowRigid = intantArrow.GetComponent<Rigidbody>();
-        arrowRigid.velocity = arrowPos.forward * 50;
-        Destroy(intantArrow,1f);
+        arrowRigid.velocity = arrowPos.forward * playerST.bowPower * 150;
+        Destroy(intantArrow, 1f);
+
+        playerST.anim.SetBool("doShot", false);
+        
+        playerST.bowPower = 0;
+
+        yield return new WaitForSeconds(0.25f);
+
+        playerST.isFireReady = true;
+
         yield return null;
     }
 }

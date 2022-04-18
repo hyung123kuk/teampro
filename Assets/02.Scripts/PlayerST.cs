@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerST : MonoBehaviour
 {
+    public enum Type { Warrior, Archer, Mage };
+    public Type CharacterType;
     Transform _transform;
     Rigidbody rigid;
 
@@ -16,12 +18,20 @@ public class PlayerST : MonoBehaviour
     public int maxhealth; //체력최대치
     public Weapons equipWeapon;    //현재 무기. 나중에 배열로 여러무기를 등록하려고함
 
+    public float bowMinPower = 0.2f;  
+    public float bowPower; // 화살 충전 데미지
+    public float bowChargingTime = 1.0f; //화살 최대 충전시간
+    public bool isSootReady= true;
+    
+
     float h; //X값 좌표
     float v; //Z값 좌표
     float fireDelay; //공격속도 계산용
 
     bool fDown; //마우스 왼쪽버튼을 눌렀다면 true
-    bool isFireReady;  //무기 rate가 fireDelay보다 작다면 true로 공격가능상태
+    bool fDowning; //마우스 왼쪽버튼을 눌르고 있다면 true
+    bool fUp;
+    public bool isFireReady=true;  //무기 rate가 fireDelay보다 작다면 true로 공격가능상태
     bool isDamage; //무적타임. 연속으로 다다닥 맞을수있기때문에
     bool sDown; //점프입력
     bool Rdown;//알트입력
@@ -36,6 +46,7 @@ public class PlayerST : MonoBehaviour
 
     void Awake()
     {
+        bowPower = bowMinPower;
         _transform = GetComponent<Transform>();
         anim = GetComponentInChildren<Animator>();
         rigid = GetComponent<Rigidbody>();
@@ -89,14 +100,49 @@ public class PlayerST : MonoBehaviour
 
     void Attack()   //공격
     {
-        fireDelay += Time.deltaTime;     //공격속도 계산
-        isFireReady = equipWeapon.rate < fireDelay;  //공격 가능 타임
-
-        if(fDown && isFireReady && !isDodge)  //공격할수있을때
+        if (CharacterType == Type.Warrior)
         {
-            equipWeapon.Use();
-            anim.SetTrigger("doSwing");
-            fireDelay = 0;
+            fireDelay += Time.deltaTime;     //공격속도 계산
+            isFireReady = equipWeapon.rate < fireDelay;  //공격 가능 타임
+
+            if (fDown && isFireReady && !isDodge)  //공격할수있을때
+            {
+                equipWeapon.Use();
+                anim.SetTrigger("doSwing");
+                fireDelay = 0;
+            }
+        }
+
+        else if (CharacterType == Type.Archer)
+        {
+            fireDelay += Time.deltaTime;
+
+            if (fDowning && bowPower < bowChargingTime)
+            {
+                
+                bowPower += Time.deltaTime;
+            }
+
+            if (fDowning  && isFireReady&& !isDodge && equipWeapon.rate < fireDelay)
+            {
+                bowPower = bowMinPower;
+                anim.SetTrigger("doSwing");
+                isSootReady = false;
+                isFireReady = false;
+                fireDelay = 0f;
+            }
+            else if (fUp&& !isSootReady )
+            {
+               
+                anim.SetBool("doShot", true);
+
+                equipWeapon.Use();
+                
+                
+             }
+
+
+
         }
     }
     void Jump()
@@ -136,6 +182,8 @@ public class PlayerST : MonoBehaviour
         h = Input.GetAxisRaw("Horizontal");    //X좌표 입력받기
         v = Input.GetAxisRaw("Vertical"); //Z좌표 입력받기
         fDown = Input.GetButtonDown("Fire1"); //마우스1번키 입력
+        fDowning = Input.GetButton("Fire1");
+        fUp = Input.GetButtonUp("Fire1");
         sDown = Input.GetButtonDown("Jump"); //점프사용 스페이스바
         Rdown = Input.GetButton("Run"); //달리기  F키 임시용
         Ddown = Input.GetButtonDown("Dodge"); //구르기 쉬프트키

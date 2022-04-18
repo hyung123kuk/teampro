@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}</ProjectGuid>
+    <ProjectGuid>{5FF63D80-98BB-8270-140F-954A9D3B28BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.30f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\11.Effect\MeleeWeaponTrail\Example\Scripts\MouseMove.cs" />
@@ -138,6 +138,7 @@
     <Compile Include="Assets\10.Utility\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\10.Utility\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl4Axis.cs" />
     <Compile Include="Assets\10.Utility\Standard Assets\Utility\DragRigidbody.cs" />
+    <Compile Include="Assets\Project Dawn\Sword Slash\Demo\SetTrigger.cs" />
     <Compile Include="Assets\10.Utility\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
     <Compile Include="Assets\02.Scripts\EnemySlime.cs" />
     <Compile Include="Assets\10.Utility\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAudio.cs" />
@@ -154,6 +155,7 @@
     <Compile Include="Assets\10.Utility\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAiControl.cs" />
     <Compile Include="Assets\10.Utility\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
     <Compile Include="Assets\10.Utility\Standard Assets\Utility\ForcedReset.cs" />
+    <Compile Include="Assets\Project Dawn\Sword Slash\Demo\CreateEffectOnTrigger.cs" />
     <Compile Include="Assets\10.Utility\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
     <Compile Include="Assets\08.Build\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\07.Anims\ExplosiveLLC\Warrior FREE\Code\WarriorData.cs" />
@@ -199,8 +201,6 @@
     <Compile Include="Assets\amusedART\Mushroom_Monster\Script\MushroomMon_Ani_Test.cs" />
     <Compile Include="Assets\10.Utility\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
     <Compile Include="Assets\10.Utility\Standard Assets\Utility\FPSCounter.cs" />
-    <Compile Include="Assets\Project Dawn\Sword Slash\Demo\SetTrigger.cs" />
-    <Compile Include="Assets\Project Dawn\Sword Slash\Demo\CreateEffectOnTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\10.Utility\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
@@ -471,6 +471,12 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
