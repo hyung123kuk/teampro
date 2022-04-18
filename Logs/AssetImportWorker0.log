@@ -1,0 +1,209 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16304 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/bjkoo/Documents/GitHub/teampro
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+8545
+Successfully changed project path to: C:/Users/bjkoo/Documents/GitHub/teampro
+C:/Users/bjkoo/Documents/GitHub/teampro
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 62.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/bjkoo/Documents/GitHub/teampro/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   30.0.14.9613
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.001664 seconds.
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 68.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.740 seconds
+Domain Reload Profiling:
+	ReloadAssembly (740ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (594ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (177ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (225ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (69ms)
+				BeforeProcessingInitializeOnLoad (20ms)
+				ProcessInitializeOnLoadAttributes (96ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002239 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.214 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1215ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (966ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (329ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (382ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (275ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1684 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.4 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2130.
+Total: 5.041500 ms (FindLiveObjects: 0.166300 ms CreateObjectMapping: 0.083100 ms MarkObjects: 4.416000 ms  DeleteObjects: 0.374400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/slash5-HungNguyen/prefab/slash/slash-green bolder.prefab
+  artifactKey: Guid(46251c357a645f04c85bb9ee5cde4d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/slash5-HungNguyen/prefab/slash/slash-green bolder.prefab using Guid(46251c357a645f04c85bb9ee5cde4d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115189e42873b5aab1db2ec3015c1c27') in 0.146324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/slash5-HungNguyen/prefab/ground 1.prefab
+  artifactKey: Guid(2c986d7e539b36c4b94e746e94ff211a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/slash5-HungNguyen/prefab/ground 1.prefab using Guid(2c986d7e539b36c4b94e746e94ff211a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93419619d0eb5ba6f12570d38eed70fd') in 0.019632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/slash5-HungNguyen/prefab/slash/white-blue bolder.prefab
+  artifactKey: Guid(78e50a02e17938a4baf517253d545621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/slash5-HungNguyen/prefab/slash/white-blue bolder.prefab using Guid(78e50a02e17938a4baf517253d545621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b547f9b483935dcf24c8e17be733b426') in 0.009450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.351950 seconds.
+  path: Assets/Project Dawn
+  artifactKey: Guid(2655851b0dffa7445bab58d21168c01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Dawn using Guid(2655851b0dffa7445bab58d21168c01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278511a39e512c1507605718c116085f') in 0.002346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.303106 seconds.
+  path: Assets/Project Dawn/Sword Slash/Prefabs/Sword Slash Blue.prefab
+  artifactKey: Guid(8f651c158e51b5a47a42c01ef2dea467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Dawn/Sword Slash/Prefabs/Sword Slash Blue.prefab using Guid(8f651c158e51b5a47a42c01ef2dea467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4781977c563d21d22b33f87faca53f') in 0.014443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.086988 seconds.
+  path: Assets/Project Dawn/Sword Slash/Models
+  artifactKey: Guid(734e42741c98abe478ffcab032da891f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Dawn/Sword Slash/Models using Guid(734e42741c98abe478ffcab032da891f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52e3e78398d01431608a3080436863c') in 0.001747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.098462 seconds.
+  path: Assets/Project Dawn/Sword Slash/Models/Distortion.fbx
+  artifactKey: Guid(1fd442787753b35499fe5d441f3b3c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Dawn/Sword Slash/Models/Distortion.fbx using Guid(1fd442787753b35499fe5d441f3b3c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e2509b93e217876a9b7e4c2309ea27') in 0.037281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.587368 seconds.
+  path: Assets/Project Dawn/Sword Slash/Models/Slash.fbx
+  artifactKey: Guid(59efb54c9f2555c48aeb64375584be17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Dawn/Sword Slash/Models/Slash.fbx using Guid(59efb54c9f2555c48aeb64375584be17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa76cc7dd856fc416aec42f461a12fc0') in 0.012656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.809186 seconds.
+  path: Assets/Project Dawn/Sword Slash/Demo
+  artifactKey: Guid(a5662e59e29c12a4b94d32a308334c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Dawn/Sword Slash/Demo using Guid(a5662e59e29c12a4b94d32a308334c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71540fb7a777f70802937646bb6903ca') in 0.001525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.252463 seconds.
+  path: Assets/Project Dawn/Sword Slash/Demo/Paladin.fbx
+  artifactKey: Guid(b0be6863bfad4a34c930cced900b1ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Dawn/Sword Slash/Demo/Paladin.fbx using Guid(b0be6863bfad4a34c930cced900b1ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daed0ccd27ecf5d74377132c4d0c1ce4') in 0.097396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.056465 seconds.
+  path: Assets/Project Dawn/Sword Slash/Demo/CreateEffectOnTrigger.cs
+  artifactKey: Guid(05b3a47daf2b7e64b968337ed6ecdb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Dawn/Sword Slash/Demo/CreateEffectOnTrigger.cs using Guid(05b3a47daf2b7e64b968337ed6ecdb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc19b3a01ec438e04955c714f1343188') in 0.007898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.366912 seconds.
+  path: Assets/Project Dawn/Sword Slash/VFX/Sword Slash.vfx
+  artifactKey: Guid(f41d5a0520b7e9a42a3220b0cc91e3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project Dawn/Sword Slash/VFX/Sword Slash.vfx using Guid(f41d5a0520b7e9a42a3220b0cc91e3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e65e26a6dc5d87eb6279eba2ab53ab1c') in 0.004948 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
